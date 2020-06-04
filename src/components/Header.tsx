@@ -8,7 +8,7 @@ const Header = () => (
     <Navbar.Collapse id="main-nav">
       <Nav className="mr-auto">
         <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/add">Add Question</Nav.Link>
+        <Nav.Link href="/add">New Question</Nav.Link>
         <Nav.Link href="/leaderboard">Leader Board</Nav.Link>
       </Nav>
     </Navbar.Collapse>

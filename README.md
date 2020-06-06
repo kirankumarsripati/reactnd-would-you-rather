@@ -1,4 +1,6 @@
 [![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=websocket-extensions&package-manager=npm_and_yarn&previous-version=0.1.3&new-version=0.1.4)](https://help.github.com/articles/configuring-automated-security-fixes)
+[![Build Status](https://travis-ci.org/kirankumarsripati/reactnd-would-you-rather.svg?branch=master)](https://travis-ci.org/kirankumarsripati/reactnd-would-you-rather)
+[![Edit kirankumarsripati/reactnd-would-you-rather](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/kirankumarsripati/reactnd-would-you-rather/tree/master/?fontsize=14&hidenavigation=1&theme=dark)
 # Would You Rather
 This is the project for the Udacity's React Nanodegree where the task is to build poll application. User can create questions or answer existing questions.
 

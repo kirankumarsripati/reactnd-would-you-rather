@@ -1,5 +1,6 @@
 {
   "name": "reactnd-would-you-rather",
+  "homepage": "/reactnd-would-you-rather/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,6 +1,6 @@
 export interface Question {
   id: string,
-  timestamp: Date,
+  timestamp: number,
   author: string,
   optionOne: QuestionOption,
   optionTwo: QuestionOption,

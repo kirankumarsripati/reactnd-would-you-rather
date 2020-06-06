@@ -3,6 +3,7 @@ import { UserById } from '../models/user';
 
 export const GET_USERS = 'GET_USERS';
 export const ADD_USER_ANSWER = 'ADD_USER_ANSWER';
+export const ADD_USER_QUESTION = 'ADD_USER_QUESTION';
 
 interface GetUsersType {
   type: typeof GET_USERS,
@@ -16,7 +17,15 @@ interface AddUserAnswerType {
   answer: AnswerOption,
 }
 
-export type UsersActionTypes = GetUsersType | AddUserAnswerType;
+interface AddUserQuestionType {
+  type: typeof ADD_USER_QUESTION,
+  authedUser: string,
+  questionId: string,
+}
+
+export type UsersActionTypes = GetUsersType
+  | AddUserAnswerType
+  | AddUserQuestionType;
 
 export function getUsers(users: UserById): UsersActionTypes {
   return {
@@ -35,5 +44,16 @@ export function addUserAnswer(
     authedUser,
     questionId,
     answer,
+  }
+}
+
+export function addUserQuestion(
+  authedUser: string,
+  questionId: string
+): UsersActionTypes {
+  return {
+    type: ADD_USER_QUESTION,
+    authedUser,
+    questionId,
   }
 }

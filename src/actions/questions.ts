@@ -1,4 +1,4 @@
-import { showLoading, hideLoading } from 'react-redux-loading';
+import { showLoading, hideLoading } from 'react-redux-loading-bar';
 
 import { _saveQuestion } from '../utils/_DATA';
 import { Question, QuestionById, AnswerOption } from '../models/question';
@@ -67,6 +67,6 @@ export function handleAddQuestion (optionOneText: string, optionTwoText: string)
       author: authedUser,
     })
     .then((question: Question) => dispatch(addQuestion(question)))
-    .then(() => dispatch(hideLoading));
+    .then(() => dispatch(hideLoading()));
   }
 }

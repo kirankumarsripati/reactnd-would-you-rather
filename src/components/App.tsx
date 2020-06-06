@@ -40,7 +40,7 @@ const App: React.FC<PropsFromRedux> = ({ notLoggedIn, loadData }) => {
   }, [loadData]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Fragment>
         <LoadingBar className='loading-bar' />
         <Header />
